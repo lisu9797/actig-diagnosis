@@ -768,7 +768,7 @@
             const area = questions[currentQuestion].area;
             scores[area] += value;
             
-            // 자동 진행 (0.8초 후)
+            // 자동 진행 (0.2초 후)
             setTimeout(() => {
                 currentQuestion++;
                 if (currentQuestion < questions.length) {
@@ -776,7 +776,7 @@
                 } else {
                     showResults();
                 }
-            }, 300);
+            }, 200);
         }
 
         function showResults() {
